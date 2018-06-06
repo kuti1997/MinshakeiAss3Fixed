@@ -906,3 +906,21 @@ a {
   margin-left: 10px;
   margin-bottom: 5px;
 }
+
+.productshow {
+  float: right;
+  height: 270px;
+  height: 270px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.columnproductshow {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.fontProduct{
+    font: bold 22px arial, sans-serif;
+}
