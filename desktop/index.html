@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/mycss.css" type="text/css" media="all">
 <script type="text/javascript" src="js/maxheight.js"></script>
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/cufon-yui.js"></script>
@@ -29,8 +30,9 @@ $(function () {
 </script>
 <!--[if lt IE 7]><script type="text/javascript" src="js/ie6_script_other.js"></script><![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="js/slideshow.js"></script>
 </head>
-<body id="page1" onLoad="new ElementMaxHeight();" class="tail-top1">
+<body id="page1" onLoad="new ElementMaxHeight();showSlides();" class="tail-top1">
 <!-- START PAGE SOURCE -->
 <div>
   <header>
@@ -57,9 +59,29 @@ $(function () {
   </header>
   <section id="content">
     <div class="container">
-      <div class="homepage">
-        <img src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp" style="width: 985px; height: 439px; object-fit: cover;" border="5">
-      </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://c.slashgear.com/wp-content/uploads/2015/08/ThinkPad_Yoga_460_3-980x420.jpg" style="width: 100%; height: 439px; object-fit: cover;" border="5">
+            </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://c.slashgear.com/wp-content/uploads/2017/06/galaxy_s8_rose_gold_pink_main-980x420.jpg" style="width: 100%; height: 439px; object-fit: cover;" border="5">
+        </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp" style="width: 100%; height: 439px; object-fit: cover;" border="5">
+            </div>
+
+        </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
       <div class="row">
             <div class="leftcolumn">
             <img src="https://static.wixstatic.com/media/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png/v1/fill/w_395,h_238,al_c,lg_1/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png" alt="sometext" style="width: 100%; height: 190px; object-fit: cover;"/>
