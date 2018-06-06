@@ -1,0 +1,72 @@
+<div class="container">
+            <h1 style="padding-left: 500px;padding-right: 500px;">&#8203;{{item.name}}&#8203;</h1>
+            <hr class="style17">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-bordered" style="background-color: #ffffff;">
+                        <thead>
+                        <tr>
+                            <th class="fontProduct" colspan="2">General :</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="fontProduct">Price :</td>
+                            <td class="fontProduct">{{item.price}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Category :</td>
+                            <td class="fontProduct">{{item.category}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Manufacturer :</td>
+                            <td class="fontProduct">{{item.manufacturer}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-hover table-bordered" style="background-color: #ffffff;">
+                        <thead>
+                        <tr>
+                            <th class="fontProduct" colspan="2">General Features :</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="fontProduct">Operating System :</td>
+                            <td class="fontProduct">{{item.operating_system}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Form Factor :</td>
+                            <td class="fontProduct">{{item.form_factor}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Dimensions (mm) :</td>
+                            <td class="fontProduct">{{item.dimensions}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Weight (g) :</td>
+                            <td class="fontProduct">{{item.weight}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Battery Capacity (mAh) :</td>
+                            <td class="fontProduct">{{item.battery_capacity}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Removable Battery :</td>
+                            <td class="fontProduct">{{item.removable_battery}}</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProduct">Colours :</td>
+                            <td class="fontProduct">{{item.colors}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="productshow">
+                        <img src="{{item.image_url}}"
+                             alt="sometext" style="width: 100%; height: 100%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
