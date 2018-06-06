@@ -882,7 +882,7 @@ a {
   float: left;
   width: 31%;
   padding: 5px;
-  border-style: ridge;
+  border-style: inset;
   border-width: 2px;
   margin-bottom: 5px;
 }
@@ -891,9 +891,9 @@ a {
   float: left;
   width: 31%;
   padding: 5px;
-  border-style: ridge;
+  border-style: inset;
   border-width: 2px;
-  margin-left: 10px;
+  margin-left: 38px;
   margin-bottom: 5px;
 }
 
@@ -901,9 +901,9 @@ a {
   float: left;
   width: 31%;
   padding: 5px;
-  border-style: ridge;
+  border-style: inset;
   border-width: 2px;
-  margin-left: 10px;
+  margin-left: 38px;
   margin-bottom: 5px;
 }
 
