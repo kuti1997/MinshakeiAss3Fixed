@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="exampleApp">
 <head>
     <title>Dr. Computer | Buy Items</title>
     <meta charset="utf-8">
@@ -39,6 +39,11 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5.js"></script><![endif]-->
     <script type="text/javascript" src="js/slideshow.js"></script>
+    <script src="/shared/js/angular.min.js"></script>
+    <script src="/app.module.js"></script>
+    <script src="js/ItemGridComponent.js"></script>
+    <script src="/item-templates-modules.js"></script>
+    <script src="js/JustForTestFunc.js"></script>
 </head>
 <body id="page4" onLoad="new ElementMaxHeight();" class="tail-top1">
 <!-- START PAGE SOURCE -->
@@ -127,48 +132,7 @@
             <div class="col-md-12" style="float: none;margin: 0 auto;">
                 <table class="table">
                     <tbody>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
-                    <tr class="col-md-4" style="padding: 18px">
-                        <td class="fontProduct" style="border: 1px groove darkgray"><img
-                                src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
-                                style="width: 100%;object-fit: cover;" border="5">
-                            <div style="text-align: center"> Im An Item</div>
-                        </td>
-                    </tr>
+                    <item-in-grid></item-in-grid>
                     </tbody>
                 </table>
             </div>

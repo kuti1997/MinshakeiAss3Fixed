@@ -1,0 +1,8 @@
+<tr class="col-md-4 " style="padding: 18px" ng-repeat="itemInGrid in $ctrl.list">
+    <td class="fontProduct" style="border: 1px groove darkgray">
+        <img onclick="javascript:justForTest({{itemInGrid.name}});"
+            src="{{itemInGrid.image_url}}"
+            style="width: 100%;object-fit: cover;" border="5">
+        <div style="text-align: center"> {{itemInGrid.name}}</div>
+    </td>
+</tr>
