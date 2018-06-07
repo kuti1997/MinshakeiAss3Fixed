@@ -6,11 +6,11 @@ data = {
         {
             "name": 'iphone 5',
             "price": '50000$',
-            'category': 'Phones',
+            "category ": 'Phones',
             "manufacturer": 'Apple',
             'operating_system': 'IOS',
             'form_factor': 'Touchscreen',
-            'dimensions': '123.80 x 58.60 x 7.60',
+            'dimensions ': '123.80 x 58.60 x 7.60',
             'weight': '112',
             'battery_capacity': '1440',
             'removable_battery': 'No',
