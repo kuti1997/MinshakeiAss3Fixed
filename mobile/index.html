@@ -1,69 +1,156 @@
-<!doctype html>
-<html ng-app="exampleApp">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>Dr. Computer | Home</title>
     <meta charset="utf-8">
-    <title>Multi-Level Drop Down Menu with Pure CSS</title>
-    <!-- Example for relative path -->
-    <link rel="stylesheet" type="text/css" href="css/example-style.css">
-    <!-- Example for absolute path -->
-    <link rel="stylesheet" type="text/css" href="/shared/css/scroll-to-top.css">
-    <script src="/shared/js/scroll-to-top.js"></script>
-    <script src="/shared/js/angular.min.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/example-list/example-list.module.js"></script>
-    <script src="app/example-list/example-list.component.js"></script>
-    <script src="app/image-list/image-list.module.js"></script>
-    <script src="app/image-list/image-list.component.js"></script>
-    <script src="app/size-list/size-list.module.js"></script>
-    <script src="app/size-list/size-list.component.js"></script>
-    <script src="app/aviv-list/aviv-list.module.js"></script>
-    <script src="app/aviv-list/aviv-list.component.js"></script>
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/mycss.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/maxheight.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+    <script type="text/javascript" src="js/jquery.faded.js"></script>
+    <script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#faded").faded({
+                speed: 500,
+                crossfade: true,
+                autoplay: 10000,
+                autopagination: false
+            });
+            $('#domain-form').jqTransform({
+                imgPath: 'images/'
+            });
+        });
+    </script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="js/ie6_script_other.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="js/slideshow.js"></script>
 </head>
+<body id="page1" onLoad="new ElementMaxHeight();showSlides();" class="tail-top1">
+<!-- START PAGE SOURCE -->
+<div>
+    <header>
+        <div class="container">
+            <div class="header-box">
+                <div class="left">
+                    <div class="right">
+                        <nav>
+                            <ul>
+                                <li class="current"><a href="index.html">HOME</a></li>
+                                <li><a href="aboutus.html">ABOUT US</a></li>
+                                <li><a href="contacts.html">CONTACT</a></li>
+                                <li><a href="buyitems.html">BUY ITEMS</a></li>
+                                <li><a href="topitems.html">TOP ITEMS</a></li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <h1><span>Dr.</span> Computer</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="content">
+        <div class="row">
+            <div class="container" style="padding-top : 10px;">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-<body >
-<header class="col-6 center">
-    <nav>
-        <ul>
-            <li><a href="example.html">Item</a></li>
-            <li><a href="#">Inner List 1</a>
-                <ul>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Inner Inner List 1</a>
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                            <li><a href="#">Item 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Inner Inner List 2</a>
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Inner List 2</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Inner Inner List</a>
-                        <ul>
-                            <li><a href="#">Item 1</a></li>
-                            <li><a href="#">Item 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item 3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Item 2</a></li>
-        </ul>
-    </nav>
-</header>
-<button onclick="topFunction()" id="scrollToTopButton" title="Go to top">^</button>
-<main class="col-9 center">
-    <example-list></example-list>
-</main>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="https://c.slashgear.com/wp-content/uploads/2015/08/ThinkPad_Yoga_460_3-980x420.jpg"
+                                 style="width: 100%; object-fit: cover;" border="5">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://c.slashgear.com/wp-content/uploads/2017/06/galaxy_s8_rose_gold_pink_main-980x420.jpg"
+                                 style="width: 100%;object-fit: cover;" border="5">
+                        </div>
+
+                        <div class="item">
+                            <img src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
+                                 style="width: 100%;object-fit: cover;" border="5">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8" style="float: none;margin: 0 auto;">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td><img
+                            src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
+                            style="width: 100%;object-fit: cover;" border="5"></td>
+                </tr>
+                <tr>
+                    <td class="fontProduct" style="text-align: center">Mobile Devices</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-8" style="float: none;margin: 0 auto;">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td><img
+                            src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
+                            style="width: 100%;object-fit: cover;" border="5"></td>
+                </tr>
+                <tr>
+                    <td class="fontProduct" style="text-align: center">Laptops</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-8" style="float: none;margin: 0 auto;">
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td><img
+                            src="https://static.wixstatic.com/media/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.jpg/v1/fill/w_932,h_420,al_c,q_85/564fc4_8bdbdcd859954157846f3fcf2bcb8926~mv2.webp"
+                            style="width: 100%;object-fit: cover;" border="5"></td>
+                </tr>
+                <tr>
+                    <td class="fontProduct" style="text-align: center">Personal Computers</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
 </body>
 </html>
