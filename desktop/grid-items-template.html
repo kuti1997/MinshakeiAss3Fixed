@@ -1,0 +1,10 @@
+<table class="table">
+<tbody>
+<tr class="col-md-4 " style="padding: 18px" ng-repeat="item_in_grid in $ctrl.list">
+    <td class="fontProduct" style="border: 1px groove darkgray">
+        <img src="{{item_in_grid.image_url}}" style="width: 100%;object-fit: cover;" border="5">
+        <div style="text-align: center"> {{item_in_grid.name}}</div>
+    </td>
+</tr>
+</tbody>
+</table>

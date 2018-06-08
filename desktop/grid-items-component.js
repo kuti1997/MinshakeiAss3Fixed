@@ -1,8 +1,8 @@
 angular.
-module('grid_items').
-component('grid_items', {
+module('grid').
+component('grid', {
   // Note: The URL is relative to our `index.html` file
-  templateUrl: 'itemInGrid-template.html',
+  templateUrl: 'grid-items-template.html',
   controller: function ExampleListController($http) {
             var self = this;
             $http.get('/data?_collection=items').then(function(response) {
