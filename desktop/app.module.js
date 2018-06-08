@@ -1,1 +1,1 @@
-angular.module('exampleApp', ['itemInGrid']);
+angular.module('exampleApp', ['item','grid_items']);

@@ -15,7 +15,7 @@ data = {
             'battery_capacity': '1440',
             'removable_battery': 'No',
             'colors': 'White, Black',
-            'image_url': 'https://static.wixstatic.com/media/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png/v1/fill/w_395,h_238,al_c,lg_1/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png'
+            "image_url": 'https://static.wixstatic.com/media/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png/v1/fill/w_395,h_238,al_c,lg_1/41d000_421de6df461a44ef2b1ecf6d5b4055f7.png'
         },
         {
             "name": 'LG G6',

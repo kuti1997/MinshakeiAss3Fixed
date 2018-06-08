@@ -1,2 +1,2 @@
 angular.module('item', []);
-angular.module('itemInGrid', []);
+angular.module('grid_items', []);

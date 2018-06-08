@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/mycss.css" type="text/css" media="all">
     <script type="text/javascript" src="js/maxheight.js"></script>
+
+    <script src="/shared/js/angular.min.js"></script>
+    <script src="/app.module.js"></script>
+    <script src="/item-templates-modules.js"></script>
+    <script src="/ItemGridComponent.js"></script>
+
     <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/cufon-yui.js"></script>
     <script type="text/javascript" src="js/cufon-replace.js"></script>
@@ -39,11 +45,7 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5.js"></script><![endif]-->
     <script type="text/javascript" src="js/slideshow.js"></script>
-    <script src="/shared/js/angular.min.js"></script>
-    <script src="/app.module.js"></script>
-    <script src="js/ItemGridComponent.js"></script>
-    <script src="/item-templates-modules.js"></script>
-    <script src="js/JustForTestFunc.js"></script>
+
 </head>
 <body id="page4" onLoad="new ElementMaxHeight();" class="tail-top1">
 <!-- START PAGE SOURCE -->
@@ -90,7 +92,7 @@
                         <td class="col-md-3" style="border : 0px solid white; text-align: center">
                             <button type="button" class="btn btn-success">Mobile Phones</button>
                         </td>
-                    <tr/>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -130,11 +132,10 @@
                 </table>
             </div>
             <div class="col-md-12" style="float: none;margin: 0 auto;">
-                <table class="table">
-                    <tbody>
-                    <item-in-grid></item-in-grid>
-                    </tbody>
-                </table>
+
+
+                    <grid_items></grid_items>
+
             </div>
         </div>
     </section>

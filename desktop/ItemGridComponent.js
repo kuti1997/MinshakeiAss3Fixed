@@ -1,6 +1,6 @@
 angular.
-module('itemInGrid').
-component('itemInGrid', {
+module('grid_items').
+component('grid_items', {
   // Note: The URL is relative to our `index.html` file
   templateUrl: 'itemInGrid-template.html',
   controller: function ExampleListController($http) {
